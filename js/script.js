@@ -1,4 +1,5 @@
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...
+// Same as document.addEventListener("DOMContentLoaded"...
+$(function () { 
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
   $("#navbarToggle").blur(function (event) {
@@ -118,7 +119,7 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName",  + chosenCategoryShortName);
       
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
